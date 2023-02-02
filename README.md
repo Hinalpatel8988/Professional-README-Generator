@@ -28,7 +28,7 @@ Clone the repo, run npm install, run node index.js
 Create professional readme.md for all your projects quick and easy.
 
 ## Video Link 
-[Watch Video](assets/Readme.webm)
+[Watch Video](assets/Walkthrough%20Video.mp4)
 
 ## Contributing
 Anyone can contribute to this project to make it better.
