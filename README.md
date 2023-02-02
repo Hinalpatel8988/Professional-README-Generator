@@ -6,7 +6,7 @@
 
   ## Description
 
-  Create Readme.md
+  This application allows you to generate readme.md using command line.
 
   ## Table of Contents
 
@@ -21,18 +21,21 @@
 
 ## Installation
 
-Npm Install
+Clone the repo, run npm install, run node index.js
 
 ## Usage
 
-Using it to easily create professional readme for all projects
+Create professional readme.md for all your projects quick and easy.
+
+## Video Link 
+[Watch Video](assets/Readme.webm)
 
 ## Contributing
-Not Applicable
+Anyone can contribute to this project to make it better.
 
 ## Tests
 
-Node index.js
+npm install & Node index.js
 
 ## License
 
@@ -49,5 +52,4 @@ hani8988@gmail.com
 ## Questions
 
 If you have any questions please reach out to me at hani8988@gmail.com
-
 
