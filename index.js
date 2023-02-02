@@ -6,9 +6,11 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require("./utils/generateMarkdown");
 
 
-const questions = [
+inquirer
+  .prompt([
     {
       type: 'input',
       message: 'What is your project title?',
@@ -58,8 +60,18 @@ const questions = [
         type: 'list',
         message: 'Choose your license for your project',
         name: 'license',
-        choices: ["MIT", "MPL-2.0", "APACHE 2.0", "GPL 3.0", "BSD 3", "MS-Pl", "None"]
+        choices: ["MIT", "MPL-2.0", "APACHE 2.0", "GPL 3.0", "BSD 3", "IPL-1.0", "None"]
       },
-  ];
+  ])
+  .then((answers) => {
+    const pageContent = generateMarkdown(answers);
 
+    fs.writeFile('README.md', pageContent, (err) =>
+      err ? console.log(err) : console.log('The README.md is successfully created!')
+    );
+  });
+    
+   function init() {}
+
+init();
  
