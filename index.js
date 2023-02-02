@@ -1,13 +1,65 @@
-// TODO: Include packages needed for this application
-
 // TODO: Create an array of questions for user input
-const questions = [];
-
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
 // TODO: Create a function to initialize app
-function init() {}
-
 // Function call to initialize app
-init();
+
+
+const inquirer = require('inquirer');
+const fs = require('fs');
+
+
+const questions = [
+    {
+      type: 'input',
+      message: 'What is your project title?',
+      name: 'title',
+    },
+    {
+      type: 'input',
+      message: 'Describe about your project:',
+      name: 'description',
+    },
+    {
+      type: 'input',
+      message: 'How you intend to use the Project?',
+      name: 'usage',
+    },
+    {
+        type: 'input',
+        message: 'How to install your project?',
+        name: 'installation',
+      },
+      {
+        type: 'input',
+        message: 'How can the user contribute to your project?',
+        name: 'contribution',
+      },
+      {
+        type: 'input',
+        message: 'What command should be run to run the tests?',
+        name: 'tests',
+      },
+      {
+        type: 'input',
+        message: 'What is your GitHub Username?',
+        name: 'github',
+      },
+      {
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email',
+      },
+      {
+        type: 'input',
+        message: 'How to reach you with additional questions?',
+        name: 'questions',
+      },
+      {
+        type: 'list',
+        message: 'Choose your license for your project',
+        name: 'license',
+        choices: ["MIT", "MPL-2.0", "APACHE 2.0", "GPL 3.0", "BSD 3", "MS-Pl", "None"]
+      },
+  ];
+
+ 
