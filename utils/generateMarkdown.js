@@ -1,8 +1,7 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return "[[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
   } else if (license === "MPL 2.0") {
     return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
   } else if (license === "APACHE 2.0") {
@@ -18,7 +17,59 @@ function renderLicenseBadge(license) {
 }
   
 function generateMarkdown(answers) {
-  return `# ${answers.title}`;
+  return `
+  
+  # ${answers.title}
+
+  ${renderLicenseBadge(answers.license)}
+
+  ## Description
+
+  ${answers.description}
+
+  ## Table of Contents
+
+- [Project Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contribution)
+- [Tests](#tests)
+- [License](#license)
+- [Github](#github)
+- [Questions](#questions)
+
+## Installation
+
+${answers.installation}
+
+## Usage
+
+${answers.usage}
+
+## Contributing
+${answers.contribution}
+
+## Tests
+
+${answers.tests}
+
+## License
+
+${answers.license}
+
+## Github
+
+${answers.github}
+
+## Email
+
+${answers.email}
+
+## Questions
+
+If you have any questions please reach out to me at ${answers.questions}
+
+`;
 }
 
 module.exports = generateMarkdown;
