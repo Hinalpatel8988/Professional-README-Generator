@@ -29,6 +29,7 @@ Create professional readme.md for all your projects quick and easy.
 
 ## Video Link 
 [Watch Video] https://drive.google.com/file/d/1zpkaPRQCq9_XWd5yDc619OJIj_dSbKJJ/view?usp=share_link
+[label](assets/Walkthrough%20Video.mp4)[label](assets/Readme.webm)
 
 ## Contributing
 Anyone can contribute to this project to make it better.
